@@ -16,7 +16,7 @@ const isCurrent = (href: string) =>
 <header
   class="header sticky top-0 z-10 flex h-[var(--header-h)] items-center justify-between border-b border-line bg-header px-6 text-on-brand"
 >
-  <a href="/" class="flex items-center gap-2 text-lg font-semibold tracking-wide">
+  <a href="/" class="flex min-h-11 items-center gap-2 text-lg font-semibold tracking-wide">
     <!-- Decorative: the wordmark carries the name, so the fern is hidden from screen readers. -->
     <img src="/brand/rainbow-fern.svg" alt="" width="28" height="28" class="h-7 w-7" />
     Rainbowfern
@@ -42,7 +42,7 @@ const isCurrent = (href: string) =>
 
   <button
     type="button"
-    class="hamburger flex h-10 w-10 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent lg:hidden"
+    class="hamburger flex h-11 w-11 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent lg:hidden"
     popovertarget="mobile-menu"
     popovertargetaction="toggle"
     aria-controls="mobile-menu"

@@ -5,7 +5,8 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 ## Foundations (shared layout, metadata, tokens)
 
 - [x] T01 Skip link and main id. Add visually-hidden-until-focus "Skip to main content" link first in body in src/layouts/Layout.astro, target `#main`; add id="main" to main. (AUDIT 9)
-- [ ] T02 Touch targets to 44px. Logo link, "View all projects", theme switch, hamburger, "← All projects" on project pages get min-h-11 / padding without changing look. (AUDIT 10)
+- [x] T02 Touch targets to 44px. Logo link, "View all projects", theme switch, hamburger, "← All projects" on project pages get min-h-11 / padding without changing look. (AUDIT 10)
+- [ ] T02b Remaining touch targets. Desktop nav links in src/components/Header.astro are 43px: add min-h-11 (keep px-3 and look). Project page "Code →" and asset links in src/pages/projects/[id].astro are 20-27px: make them inline-flex min-h-11 items-center. Verify with the eval snippet in T02. (AUDIT 10)
 - [ ] T03 Global reduced-motion rule. Add the motion.json rule to src/styles/global.css (animation/transition duration 0.01ms, iteration 1, scroll-behavior auto). Verify mobile menu slide has no transition under reduced motion. Do NOT remove the slide. (AUDIT 17, owner)
 - [ ] T04 Package metadata. package.json name -> "rainbowfern-astro-v2", add "description". Keep version and deps. (AUDIT 8, owner)
 - [ ] T05 Astro site config. Add `site: 'https://rainbowfern.com'` to astro.config.mjs (confirm with owner in final report). (AUDIT 14)
