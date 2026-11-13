@@ -14,7 +14,7 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 - [x] T07 Page descriptions. Every page in src/pages passes a literal description prop to Layout. (AUDIT 15)
 - [x] T08 robots.txt. Add public/robots.txt allowing all crawlers, with Sitemap line pointing to /sitemap.xml. (AUDIT 14)
 - [x] T09 Footer. Show "© {year} Astrid Lapinski · Rainbowfern LLC" and add secondary links: Education, Experience, Projects (kept reachable), plus placeholders /pricing, /now, /cv, /press, /accessibility, /privacy, /writing (link only once page exists in later tasks). Add the line "No ads. No third-party trackers." (AUDIT 8, 30)
-- [ ] T10 CTA hover and radius. "Contact me" button hover: color change at 150ms token (not underline only). Card radius rounded-lg -> rounded-md in ProjectCard and ServicesHero cards. (AUDIT 22, 23)
+- [x] T10 CTA hover and radius. "Contact me" button hover: color change at 150ms token (not underline only). Card radius rounded-lg -> rounded-md in ProjectCard and ServicesHero cards. (AUDIT 22, 23)
 - [ ] T11 Type scale tokens. Add display/2xl/lg/label role variables to src/styles/theme.css matching typography.json; apply to page h1 (display), h2 (2xl), card titles (lg semibold), dates (mono label style with tabular-nums). Visual change must stay small. (AUDIT 20, 21)
 - [ ] T12 Tabular nums. Dates in Experience and Education and project meta use font-variant-numeric: tabular-nums. (AUDIT 21)
 
@@ -61,3 +61,4 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 - Prices, PPP disclosure, testimonials, analytics tool choice, RSS feed (needs posts), OG image asset.
 - Education tile density (AUDIT 18), Experience copy rewrite (AUDIT 19): pages kept; rewrite waits on owner.
 - Dark project hero scrim (AUDIT 24), code block theme (AUDIT 25), signature quirks (AUDIT 28), colophon and bread-and-roses line (AUDIT 27).
+- Deferred from T10: rounded-lg remains on src/pages/education.astro:78 (skill cards) and src/pages/projects/[id].astro:32 (project hero). Hover on Contact me is opacity 90%, not a colour token (AUDIT 23 asked for colour).

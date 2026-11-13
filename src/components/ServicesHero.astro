@@ -24,7 +24,7 @@ const services = [
 
   <ul class="mt-6 grid gap-6 sm:grid-cols-3">
     {services.map((service) => (
-      <li class="flex flex-col gap-2 rounded-lg bg-card p-5 shadow-paper ring-1 ring-line">
+      <li class="flex flex-col gap-2 rounded-md bg-card p-5 shadow-paper ring-1 ring-line">
         <h3 class="text-lg font-semibold text-heading">{service.title}</h3>
         <p class="text-sm text-ink-muted">{service.description}</p>
       </li>
@@ -43,7 +43,7 @@ const services = [
 
     <a
       href="/contact"
-      class="inline-flex min-h-11 items-center rounded-sm bg-accent px-5 py-2 font-semibold text-on-accent hover:underline"
+      class="inline-flex min-h-11 items-center rounded-sm bg-accent px-5 py-2 font-semibold text-on-accent transition-opacity duration-150 hover:opacity-90"
     >
       Contact me
     </a>
