@@ -2,31 +2,45 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Pricing" description="Pricing for Rainbowfern: a standard rate, a solidarity rate, and a sliding scale.">
+<Layout title="Pricing" description="Pricing for Rainbowfern: fixed-scope offers, sessions and a sliding scale, all in one place.">
   <h1 class="text-3xl font-bold text-heading">Pricing</h1>
-  <p class="mt-4 text-ink-soft">Pay what your situation allows. You'll get the same work either way.</p>
+  <p class="mt-4 text-ink-soft">Every price on this site lives on this page. Fixed-scope offers have a starting price. Sessions have a fixed price. Mentoring uses a sliding scale.</p>
 
-  <section class="mt-12" aria-labelledby="scale-heading">
-    <h2 id="scale-heading" class="text-2xl font-semibold text-heading">Sliding scale</h2>
+  <section class="mt-12" aria-labelledby="offers-heading">
+    <h2 id="offers-heading" class="text-2xl font-semibold text-heading">Fixed-scope offers</h2>
     <ul class="mt-6 space-y-4">
       <li class="rounded-lg bg-card p-5 shadow-paper ring-1 ring-line">
-        <h3 class="text-lg font-semibold text-heading">Standard rate</h3>
-        <p class="mt-1 text-ink-muted">[PRICE TBD]</p>
+        <p class="text-ink-soft">Codebase Map: from [PRICE TBD].</p>
       </li>
       <li class="rounded-lg bg-card p-5 shadow-paper ring-1 ring-line">
-        <h3 class="text-lg font-semibold text-heading">Solidarity rate</h3>
-        <p class="mt-1 text-ink-muted">[PRICE TBD]</p>
+        <p class="text-ink-soft">Small-business systems: from [PRICE TBD], on a sliding scale.</p>
       </li>
     </ul>
   </section>
 
+  <section class="mt-12" aria-labelledby="sessions-heading">
+    <h2 id="sessions-heading" class="text-2xl font-semibold text-heading">Sessions</h2>
+    <p class="mt-4 text-ink-soft">Unstuck session, 60 minutes: [PRICE TBD]. 90 minutes: [PRICE TBD]. Paid when you book.</p>
+  </section>
+
+  <section class="mt-12" aria-labelledby="scale-heading">
+    <h2 id="scale-heading" class="text-2xl font-semibold text-heading">Sliding scale</h2>
+    <p class="mt-4 text-ink-soft">Mentoring has a standard rate and a floor: standard [PRICE TBD], floor [PRICE TBD]. The same quality at every rate. I don't ask about income or identity.</p>
+    <p class="mt-4 text-ink-soft">Pay what your situation allows. You'll get the same work either way.</p>
+    <p class="mt-4 text-ink-soft">The lowest tier is the solidarity rate: [PRICE TBD].</p>
+  </section>
+
   <section class="mt-12" aria-labelledby="capacity-heading">
     <h2 id="capacity-heading" class="text-2xl font-semibold text-heading">Capacity</h2>
-    <p class="mt-4 text-ink-soft">[TBD: capacity, e.g. 'I take two solidarity-rate projects at a time']</p>
+    <p class="mt-4 text-ink-soft">[TBD: honest capacity line, e.g. 'I take two solidarity-rate projects at a time; 1 open now.']</p>
   </section>
 
   <section class="mt-12" aria-labelledby="allocation-heading">
-    <h2 id="allocation-heading" class="text-2xl font-semibold text-heading">Where the fee goes</h2>
-    <p class="mt-4 text-ink-soft">[TBD: fee allocation]</p>
+    <h2 id="allocation-heading" class="text-2xl font-semibold text-heading">Where the money goes</h2>
+    <p class="mt-4 text-ink-soft">[TBD: fee-allocation note, optional. Only if Astrid wants to publish it.]</p>
   </section>
+
+  <p class="mt-12 text-ink-soft">
+    Not sure which one fits? <a href="/contact" class="text-accent hover:underline inline-flex min-h-11 items-center">Start with the contact page.</a>
+  </p>
 </Layout>
