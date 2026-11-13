@@ -41,7 +41,7 @@ const { Content } = await render(project);
       <h1 class="p-6 text-3xl font-bold text-on-scrim sm:text-4xl">{title}</h1>
     </header>
 
-    <p class="mt-4 text-sm text-ink-subtle">
+    <p class="mt-4 text-sm text-ink-subtle tabular-nums">
       Started <time datetime={startedDate.toISOString()}>{formatMonthYear(startedDate)}</time>
       {
         lastUpdated && (

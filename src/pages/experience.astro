@@ -110,7 +110,7 @@ const experiences: ExperienceItem[] = [
           <div>
               <h2 class="text-2xl font-semibold text-heading">{exp.title}</h2>
               <p class="mt-1 text-ink-muted">
-                  {exp.company} {exp.location && `| ${exp.location}`} | <span class="font-mono text-sm text-ink-subtle">{exp.dates}</span>
+                  {exp.company} {exp.location && `| ${exp.location}`} | <span class="font-mono text-sm text-ink-subtle tabular-nums">{exp.dates}</span>
               </p>
               <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-ink-soft">
                   {exp.responsibilities.map((responsibility) => (
