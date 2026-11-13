@@ -59,7 +59,7 @@ const { Content } = await render(project);
         href={codeUrl}
         target="_blank"
         rel="noopener noreferrer"
-        class="font-semibold text-accent hover:underline">Code →</a
+        class="inline-flex min-h-11 items-center font-semibold text-accent hover:underline">Code →</a
       >
     </div>
 
@@ -74,7 +74,7 @@ const { Content } = await render(project);
                   href={asset.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-accent hover:underline">{asset.label}</a
+                  class="inline-flex min-h-11 items-center text-accent hover:underline">{asset.label}</a
                 >
               </li>
             ))}
