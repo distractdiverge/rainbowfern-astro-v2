@@ -1,7 +1,7 @@
 ---
 export interface MetaSEOProperties {
     title: string;
-    description: string;
+    description?: string;
     cannonicalURL?: URL | string;
     image?: string;
     article?: {
@@ -14,19 +14,19 @@ export interface MetaSEOProperties {
 
 const {
     title,
-    description,
+    description = "Astrid Lapinski: consulting on software architecture, legacy code and small-business systems.",
     //TODO: cannonicalURL = new URL(Astro.url.pathname, Astro.site),
-    image = "./fern-colors.svg", // TODO: Set default Image (e.g. Favicon)
+    image = "/brand/rainbow-fern.svg", // OG images are normally raster (png/jpg); no raster asset yet
     article,
 } = Astro.props;
 
 const siteTitle = `${title} | poc-v2 | Astrid Lapinski | Software Architecture`;
-const resolvedImageURL = image + " " + Astro.site; //}`new URL(image, Astro.site)
+const resolvedImageURL = Astro.site ? new URL(image, Astro.site).href : image;
 ---
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/svg+xml" href="./brand/rainbow-fern.svg" />
+<link rel="icon" type="image/svg+xml" href="/brand/rainbow-fern.svg" />
 <meta name="generator" content={Astro.generator} />
 
 <!-- <link rel="canonical" href="{TODO: cannonicalURL}" />-->
