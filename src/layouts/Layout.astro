@@ -39,8 +39,12 @@ const { title, description, image, article, wide = false } = Astro.props;
     </script>
   </head>
   <body class="flex min-h-dvh flex-col bg-page text-ink antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:inline-flex focus:min-h-11 focus:items-center focus:rounded-md focus:bg-page focus:px-4 focus:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+    >Skip to main content</a>
     <Header />
-    <main class={`mx-auto w-full flex-1 px-6 py-10 ${wide ? 'max-w-7xl' : 'max-w-3xl'}`}>
+    <main id="main" class={`mx-auto w-full flex-1 px-6 py-10 ${wide ? 'max-w-7xl' : 'max-w-3xl'}`}>
       <slot />
     </main>
     <Footer />
