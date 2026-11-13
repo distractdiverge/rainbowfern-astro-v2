@@ -1,11 +1,25 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import OfferPage from '../../components/OfferPage.astro';
 ---
 
-<Layout title="Codebase Map" description="Codebase Map: a fixed-scope architecture overview, dependency and data-flow diagrams, and a safe-to-change plan for a codebase nobody fully understands.">
-  <h1 class="text-3xl font-bold text-heading">Codebase Map</h1>
-  <p class="mt-4 text-ink-soft">Codebase Map is a fixed-scope review that turns an undocumented or AI-generated codebase into an architecture overview, diagrams, a risk list, and a prioritized safe-to-change plan.</p>
-
-  <p class="mt-8 text-ink-soft">From [PRICE TBD]</p>
-  <p class="mt-8 text-ink-soft">[TBD: full offer page, see content-strategy]</p>
+<Layout title="Codebase Map" description="Codebase Map: a fixed-scope review that turns an undocumented codebase into an architecture overview and a safe-to-change plan.">
+  <OfferPage
+    title="Codebase Map"
+    problem="Nobody fully understands this code, and you're afraid to change it. I map it so you can see what's there and decide what's safe to touch."
+    deliverables={[
+      "An architecture overview",
+      "Dependency and data-flow diagrams",
+      "A risk list",
+      "A prioritized 'safe to change' plan",
+    ]}
+    steps={[
+      "You share the repository and a 30-minute walkthrough with the people who maintain it.",
+      "I read the code and write up what I find, with diagrams.",
+      "We review the findings together and agree the plan.",
+    ]}
+    proof="[TBD: link to a redacted sample artifact or case study]"
+    priceLine="From [PRICE TBD]"
+    notFor="[TBD: who this is not for] Best fit: small JS, TS, Python and .NET projects."
+  />
 </Layout>

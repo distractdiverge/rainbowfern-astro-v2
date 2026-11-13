@@ -1,11 +1,25 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import OfferPage from '../../components/OfferPage.astro';
 ---
 
-<Layout title="Small-business systems" description="Small-business systems: ethical, self-hostable tools such as CRM, hosting, and monitoring, plus a review of regulated AI adoption.">
-  <h1 class="text-3xl font-bold text-heading">Small-business systems</h1>
-  <p class="mt-4 text-ink-soft">Small-business systems are ethical, self-hostable tools for small businesses, co-ops, and nonprofits, such as a CRM, hosting, and monitoring, plus a review of regulated AI adoption.</p>
-
-  <p class="mt-8 text-ink-soft">From [PRICE TBD], sliding scale</p>
-  <p class="mt-8 text-ink-soft">[TBD: full offer page, see content-strategy]</p>
+<Layout title="Small-business systems" description="Small-business systems: ethical, self-hostable tools and an honest review of AI adoption, with optional ongoing support.">
+  <OfferPage
+    title="Small-business systems"
+    problem="Your tools cost too much, lock your data away, or nobody on your team can run them. I help you choose and set up systems you own."
+    deliverables={[
+      "A review of your current tools",
+      "Ethical, self-hostable options (CRM, hosting, monitoring) with trade-offs",
+      "A short review of AI adoption for your work",
+      "Optional ongoing support",
+    ]}
+    steps={[
+      "A 30-minute intro call to understand the work.",
+      "A written review with options and costs.",
+      "Setup and handover, with documentation you keep.",
+    ]}
+    proof="[TBD: example project or case study]"
+    priceLine="From [PRICE TBD], sliding scale"
+    notFor="[TBD: who this is not for]"
+  />
 </Layout>
