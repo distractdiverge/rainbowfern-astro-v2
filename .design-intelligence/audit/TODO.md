@@ -26,7 +26,7 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 ## Copy fixes
 
 - [x] T15 Shadow caption and alt. In src/components/ServicesHero.astro, change "our resident dog" and "very very good boy" to first person singular ("my dog", "Shadow, my dog and a good boy."). Alt text: "Large dog sitting in a forest, looking at the camera. This is Shadow, my dog." (AUDIT 7)
-- [ ] T16 Lazy image check. In the mobile full-page screenshot the Shadow image left a gap. Check in browser by scrolling; if it did not load, set explicit width/height on Image and loading="eager" for that image. (AUDIT 12)
+- [x] T16 (checked: image loads fine after scroll, 320x427 rendered; no change needed) Lazy image check. In the mobile full-page screenshot the Shadow image left a gap. Check in browser by scrolling; if it did not load, set explicit width/height on Image and loading="eager" for that image. (AUDIT 12)
 
 ## Navigation and sitemap (judgment; owner-approved)
 
