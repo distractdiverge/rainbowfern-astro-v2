@@ -44,7 +44,7 @@ Source of truth for rainbowfern.com. Read this first in every session.
 - `explorations/`
   - [[live-site-observations]]: rainbowfern.com as of 2026-11-08, with screenshots
   - [[example-sites-observations]]: 17 example sites measured and screenshotted 2026-11-12, in `explorations/examples/`
-- [[OUTSTANDING-CONSIDERATIONS]]: open items and things to re-review (meant for the repo root; see that file)
+- [[OUTSTANDING-CONSIDERATIONS]]: open items and things to re-review (at the repo root)
 - `decisions/`
   - `001-apply-tokens-to-site.md`: applied
   - [[002-clients-first]]: accepted

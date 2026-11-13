@@ -15,7 +15,7 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 - [x] T08 robots.txt. Add public/robots.txt allowing all crawlers, with Sitemap line pointing to /sitemap.xml. (AUDIT 14)
 - [x] T09 Footer. Show "© {year} Astrid Lapinski · Rainbowfern LLC" and add secondary links: Education, Experience, Projects (kept reachable), plus placeholders /pricing, /now, /cv, /press, /accessibility, /privacy, /writing (link only once page exists in later tasks). Add the line "No ads. No third-party trackers." (AUDIT 8, 30)
 - [x] T10 CTA hover and radius. "Contact me" button hover: color change at 150ms token (not underline only). Card radius rounded-lg -> rounded-md in ProjectCard and ServicesHero cards. (AUDIT 22, 23)
-- [ ] T11 Type scale tokens. Add display/2xl/lg/label role variables to src/styles/theme.css matching typography.json; apply to page h1 (display), h2 (2xl), card titles (lg semibold), dates (mono label style with tabular-nums). Visual change must stay small. (AUDIT 20, 21)
+- [x] T11 Type scale tokens. Add display/2xl/lg/label role variables to src/styles/theme.css matching typography.json; apply to page h1 (display), h2 (2xl), card titles (lg semibold), dates (mono label style with tabular-nums). Visual change must stay small. (AUDIT 20, 21)
 - [ ] T12 Tabular nums. Dates in Experience and Education and project meta use font-variant-numeric: tabular-nums. (AUDIT 21)
 
 ## Gradients and mock imagery (owner direction)
@@ -53,7 +53,7 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 
 ## Housekeeping
 
-- [ ] T34 Move OUTSTANDING-CONSIDERATIONS.md to repo root with git mv and update the link in .design-intelligence/system.md. (AUDIT 32)
+- [x] T34 Move OUTSTANDING-CONSIDERATIONS.md to repo root with git mv and update the link in .design-intelligence/system.md. (AUDIT 32)
 
 ## Deferred (not in this pass; report at end)
 
