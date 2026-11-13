@@ -41,7 +41,7 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 - [x] T25 /contact rebuild. Replace placeholder with the ThreeDoors component, the four funding-preference options for the intro call (as radio list, non-required), and the email. No real scheduler; slot is clearly marked. (AUDIT 4)
 - [x] T26 /about. Story (existing intro copy from home, edited to first person), self-portrait, "How I work" section with four practice lines from voice.md (values as policies). Link to /cv. (AUDIT 1, 27, 29)
 - [x] T27 /cases. Placeholder lead-case section with PPP "[TBD: disclosure]" and a list of projects linking to /projects. (AUDIT 5)
-- [ ] T28 /cv. Link to /education and /experience (kept accessible), "Open to Technical Product Owner and architect roles", PDF download placeholder "[TBD: résumé PDF]". Do not delete education or experience pages. (AUDIT 18, 19)
+- [x] T28 /cv. Link to /education and /experience (kept accessible), "Open to Technical Product Owner and architect roles", PDF download placeholder "[TBD: résumé PDF]". Do not delete education or experience pages. (AUDIT 18, 19)
 - [ ] T29 /writing, /now, /press, /accessibility, /privacy content. /now: dated availability line placeholder. /press: third-person bio draft. /privacy and /accessibility: no ads, no third-party trackers, basic analytics "[TBD: analytics tool]". (AUDIT 16)
 
 ## Legibility layer

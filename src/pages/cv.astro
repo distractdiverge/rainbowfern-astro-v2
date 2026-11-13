@@ -2,21 +2,29 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="CV" description="CV of Astrid Lapinski: role history, education, and experience.">
+<Layout title="CV" description="CV for Astrid Lapinski: role history, a PayPal Credit architecture role, and open-to roles.">
   <h1 class="text-3xl font-bold text-heading">CV</h1>
-  <p class="mt-4 text-ink-soft">Open to Technical Product Owner and architect roles.</p>
+  <p class="mt-4 text-ink-soft">My résumé and role history. I'm open to Technical Product Owner and architect roles.</p>
+
+  <section class="mt-12" aria-labelledby="open-heading">
+    <h2 id="open-heading" class="text-2xl font-semibold text-heading">Open to</h2>
+    <p class="mt-4 text-ink-soft">Technical Product Owner and architect roles.</p>
+  </section>
 
   <section class="mt-12" aria-labelledby="history-heading">
     <h2 id="history-heading" class="text-2xl font-semibold text-heading">Role history</h2>
-    <p class="mt-4 text-ink-soft">[TBD: role history]</p>
+    <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-ink-soft">
+      <li>Independent Contractor and Software Engineer, Rainbowfern (2023 to present)</li>
+      <li>Principal Technical Staff, Software Architecture for Credit Platform, PayPal (2019 to 2023)</li>
+      <li>Senior Engineer in Business Financing, PayPal (2017 to 2019)</li>
+      <li>Principal Developer, Razorfish Healthware (2012 to 2014)</li>
+    </ul>
+    <p class="mt-4 text-ink-soft">Full history and detail: the <a href="/experience" class="text-accent hover:underline inline-flex min-h-11 items-center">experience page</a>.</p>
   </section>
 
-  <section class="mt-12" aria-labelledby="more-heading">
-    <h2 id="more-heading" class="text-2xl font-semibold text-heading">More detail</h2>
-    <ul class="mt-4 space-y-2 text-ink-soft">
-      <li><a href="/education" class="underline">Education and skills</a></li>
-      <li><a href="/experience" class="underline">Experience</a></li>
-    </ul>
+  <section class="mt-12" aria-labelledby="education-heading">
+    <h2 id="education-heading" class="text-2xl font-semibold text-heading">Education</h2>
+    <p class="mt-4 text-ink-soft">Drexel University: M.S. Software Engineering (2017) and B.S. Computer Science (2008). Also: the <a href="/education" class="text-accent hover:underline inline-flex min-h-11 items-center">education page</a>.</p>
   </section>
 
   <section class="mt-12" aria-labelledby="download-heading">
