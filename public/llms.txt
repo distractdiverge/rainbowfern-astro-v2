@@ -1,0 +1,13 @@
+# Rainbowfern (Astrid Lapinski)
+> Astrid Lapinski is a software architect and the founder of Rainbowfern, a one-person consulting practice in northwest Philadelphia. Services: Codebase Map, Small-business systems, Mentoring and coaching, Unstuck sessions.
+
+## Key pages
+- [Work with me](https://rainbowfern.com/work): the four offers
+- [Pricing](https://rainbowfern.com/pricing): every price in one place
+- [Case studies](https://rainbowfern.com/cases): what was built and what Astrid did
+- [CV](https://rainbowfern.com/cv): role history
+- [Press](https://rainbowfern.com/press): third-person bio for reuse
+- [Contact](https://rainbowfern.com/contact): free intro call, paid session, or email
+
+## Contact
+- Email: contact@rainbowfern.com
