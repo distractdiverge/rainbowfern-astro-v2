@@ -15,13 +15,13 @@ export interface MetaSEOProperties {
 const {
     title,
     description = "Astrid Lapinski: consulting on software architecture, legacy code and small-business systems.",
-    //TODO: cannonicalURL = new URL(Astro.url.pathname, Astro.site),
     image = "/brand/rainbow-fern.svg", // OG images are normally raster (png/jpg); no raster asset yet
     article,
 } = Astro.props;
 
 const siteTitle = `${title} | poc-v2 | Astrid Lapinski | Software Architecture`;
 const resolvedImageURL = Astro.site ? new URL(image, Astro.site).href : image;
+const canonicalHref = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
 ---
 
 <meta charset="utf-8" />
@@ -29,7 +29,7 @@ const resolvedImageURL = Astro.site ? new URL(image, Astro.site).href : image;
 <link rel="icon" type="image/svg+xml" href="/brand/rainbow-fern.svg" />
 <meta name="generator" content={Astro.generator} />
 
-<!-- <link rel="canonical" href="{TODO: cannonicalURL}" />-->
+<link rel="canonical" href={canonicalHref} />
 
 <title>{siteTitle}</title>
 <meta name="title" content={siteTitle} />

@@ -49,7 +49,7 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 - [ ] T30 JSON-LD in Layout head: Person (Astrid Lapinski, alumniOf Drexel University, knowsAbout list, sameAs placeholders for Substack/LinkedIn/GitHub) and ProfessionalService (Rainbowfern LLC, founder Astrid Lapinski, areaServed Remote and Philadelphia region). No offers until prices exist. (AUDIT 13)
 - [ ] T31 /llms.txt in public/, linking /work, /pricing, /cases, /cv, /press. (AUDIT 14)
 - [ ] T32 Static sitemap.xml in public/ listing the routes that exist after T18. Note in final report: switch to @astrojs/sitemap later (new dependency, needs approval). (AUDIT 14)
-- [ ] T33 Canonical link on every page via MetaSEO using Astro.url (depends on T05). (AUDIT 14)
+- [x] T33 Canonical link on every page via MetaSEO using Astro.url (depends on T05). (AUDIT 14)
 
 ## Housekeeping
 
