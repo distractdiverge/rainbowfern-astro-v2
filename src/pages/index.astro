@@ -1,38 +1,75 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
-import { getFeaturedProjects } from '../lib/projects';
-import ServicesHero from '../components/ServicesHero.astro';
+import ThreeDoors from '../components/ThreeDoors.astro';
+import portrait from '../assets/AstridLooktoFront.webp';
 
-const featured = await getFeaturedProjects(3);
+const offers = [
+  {
+    title: 'Codebase Map',
+    href: '/work/codebase-map',
+    text: 'A fixed-scope map of an undocumented codebase, with a safe-to-change plan.',
+    price: 'From [PRICE TBD]',
+  },
+  {
+    title: 'Small-business systems',
+    href: '/work/small-business',
+    text: 'Ethical, self-hostable tools, and an honest review of AI adoption.',
+    price: 'From [PRICE TBD]',
+  },
+  {
+    title: 'Mentoring and coaching',
+    href: '/mentoring',
+    text: 'Privacy-protected mentoring for engineers from underrepresented and non-traditional paths.',
+    price: 'Sliding scale: standard [PRICE TBD], floor [PRICE TBD]',
+  },
+  {
+    title: 'Unstuck sessions',
+    href: '/sessions',
+    text: '60 or 90 minutes, one problem, booked and paid online.',
+    price: '[PRICE TBD] for 60 min, [PRICE TBD] for 90 min',
+  },
+];
 ---
 
-<Layout title="About" description="Astrid Lapinski: consulting on software architecture, legacy code and small-business systems.">
-  <h1 class="text-3xl font-bold text-heading">Rainbow Fern Consulting</h1>
-  <p class="mt-4 text-ink-soft">Hi! I&apos;m Astrid, founder of Rainbow Fern consulting.</p>
-  <p class="mt-4 text-ink-soft">I have worked in the software field for the last 15+ years
-  working up the corp ladder from intern to architect.</p>
-  <p class="mt-4 text-ink-soft">Now, I am focusing on taking on remote projects, mentoring
-  and helping develop amazing test automation suites.</p>
-  <p class="mt-4 text-ink-soft">Take a look below at some recent projects, or details on
-  what I offer as services.</p>
+<Layout title="Home" description="Astrid Lapinski: consulting on software architecture, legacy code and small-business systems.">
+  <h1 class="text-3xl font-bold text-heading">I help small teams understand the software and systems they already have, and make them safer to change.</h1>
+  <p class="mt-4 text-lg text-ink-soft">I'm Astrid Lapinski. I run Rainbowfern, a one-person practice in northwest Philadelphia. I work remotely, and occasionally in person nearby.</p>
+
+  <section class="mt-10 flex flex-col gap-6 sm:flex-row sm:items-start">
+    <Image src={portrait} alt="Astrid Lapinski, looking at the camera" class="rounded-md w-full max-w-xs" />
+    <div>
+      <p class="text-ink-soft">I spent 15+ years at PayPal as an engineer, manager and architect, including as one of three architects on the PayPal Credit platform.</p>
+      <a href="/about" class="mt-4 text-accent hover:underline inline-flex min-h-11 items-center">More about me</a>
+    </div>
+  </section>
 
   <section class="mt-12">
-    <div class="flex items-baseline justify-between gap-4">
-      <h2 class="text-2xl font-semibold text-heading">Featured projects</h2>
-    </div>
-    <ul class="mt-6 grid gap-6 sm:grid-cols-3">
+    <h2 class="text-2xl font-semibold text-heading">Ways to work with me</h2>
+    <ul class="mt-6 grid gap-4 sm:grid-cols-2">
       {
-        featured.map((project) => (
-          <li class="flex">
-            <ProjectCard project={project} />
+        offers.map((offer) => (
+          <li class="rounded-md bg-card p-6 shadow-paper ring-1 ring-line">
+            <h3 class="text-lg font-semibold text-heading">
+              <a href={offer.href} class="text-accent hover:underline inline-flex min-h-11 items-center">{offer.title}</a>
+            </h3>
+            <p class="text-ink-soft">{offer.text}</p>
+            <p class="text-sm text-ink-subtle">
+              <a href="/pricing" class="text-accent hover:underline inline-flex min-h-11 items-center">{offer.price}</a>
+            </p>
           </li>
         ))
       }
     </ul>
-    <div class="flex items-baseline justify-end gap-4 mt-7">
-        <a href="/projects" class="inline-flex min-h-11 items-center text-accent hover:underline">View all projects →</a>
-    </div>
   </section>
-  <ServicesHero />
+
+  <section class="mt-12">
+    <h2 class="text-2xl font-semibold text-heading">Proof</h2>
+    <p class="mt-4 text-ink-soft">[TBD: two-sentence teaser of the lead case study, see /cases]</p>
+    <a href="/cases" class="mt-4 text-accent hover:underline inline-flex min-h-11 items-center">Read the case studies</a>
+  </section>
+
+  <div class="mt-12">
+    <ThreeDoors />
+  </div>
 </Layout>
