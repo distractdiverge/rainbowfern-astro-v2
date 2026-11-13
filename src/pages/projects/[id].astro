@@ -19,7 +19,7 @@ const { title, description, codeUrl, assets, headerImage, startedDate, lastUpdat
 const { Content } = await render(project);
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description}>
   <article>
     <!-- Desktop only: pinned to the viewport's left edge, level with the hero image.
          No positioned ancestor, so `left` is measured from the page edge, not the column. -->

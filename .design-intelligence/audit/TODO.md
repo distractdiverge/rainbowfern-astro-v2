@@ -11,7 +11,7 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 - [x] T04 Package metadata. package.json name -> "rainbowfern-astro-v2", add "description". Keep version and deps. (AUDIT 8, owner)
 - [x] T05 Astro site config. Add `site: 'https://rainbowfern.com'` to astro.config.mjs (confirm with owner in final report). (AUDIT 14)
 - [x] T06 MetaSEO fixes. Make description required-with-fallback; fix resolvedImageURL concatenation (use new URL(image, Astro.site) when site set, else leave relative); point default image at src-independent /brand/rainbow-fern.svg; favicon href absolute "/brand/rainbow-fern.svg"; enable canonical using Astro.url. KEEP "poc-v2" in title. (AUDIT 15, 31)
-- [ ] T07 Page descriptions. Every page in src/pages passes a literal description prop to Layout. (AUDIT 15)
+- [x] T07 Page descriptions. Every page in src/pages passes a literal description prop to Layout. (AUDIT 15)
 - [x] T08 robots.txt. Add public/robots.txt allowing all crawlers, with Sitemap line pointing to /sitemap.xml. (AUDIT 14)
 - [ ] T09 Footer. Show "© {year} Astrid Lapinski · Rainbowfern LLC" and add secondary links: Education, Experience, Projects (kept reachable), plus placeholders /pricing, /now, /cv, /press, /accessibility, /privacy, /writing (link only once page exists in later tasks). Add the line "No ads. No third-party trackers." (AUDIT 8, 30)
 - [ ] T10 CTA hover and radius. "Contact me" button hover: color change at 150ms token (not underline only). Card radius rounded-lg -> rounded-md in ProjectCard and ServicesHero cards. (AUDIT 22, 23)
