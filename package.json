@@ -1,5 +1,6 @@
 {
-  "name": "popover-poc",
+  "name": "rainbowfern-astro-v2",
+  "description": "Portfolio and consulting site for Rainbowfern, built with Astro.",
   "type": "module",
   "version": "0.0.1",
   "engines": {
