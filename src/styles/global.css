@@ -36,3 +36,16 @@ body {
   --tw-prose-th-borders: var(--color-line);
   --tw-prose-td-borders: var(--color-line);
 }
+
+/* Reduced motion: transitions and animations become effectively instant.
+   Content stays fully visible. The mobile menu keeps its slide for normal users. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
