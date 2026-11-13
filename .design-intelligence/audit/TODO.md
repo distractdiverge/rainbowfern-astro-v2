@@ -20,8 +20,8 @@ Legend: [ ] open, [x] done. Each task cites AUDIT items.
 
 ## Gradients and mock imagery (owner direction)
 
-- [ ] T13 Replace gradient fills in mock project SVGs with solid fills of the same palette: src/assets/projects/ember-notes-thumb.svg, fern-finder-header.svg, fern-finder-thumb.svg, moss-map-header.svg, trail-journal-thumb.svg. Keep shapes. Verify with grep -l "Gradient" src/assets/projects. (AUDIT 6)
-- [ ] T14 Remove unused gradient SVGs from src/assets: background.svg and astro.svg are unreferenced. Confirm with grep first, then delete. (AUDIT 6) — note: deletion is of unreferenced template assets; owner said "add pages, never delete" applies to pages only. If unsure, skip and report.
+- [x] T13 Replace gradient fills in mock project SVGs with solid fills of the same palette: src/assets/projects/ember-notes-thumb.svg, fern-finder-header.svg, fern-finder-thumb.svg, moss-map-header.svg, trail-journal-thumb.svg. Keep shapes. Verify with grep -l "Gradient" src/assets/projects. (AUDIT 6)
+- [-] T14 (SKIPPED: deletion of unreferenced template SVGs needs owner confirmation; reported at end) Remove unused gradient SVGs from src/assets: background.svg and astro.svg are unreferenced. Confirm with grep first, then delete. (AUDIT 6) — note: deletion is of unreferenced template assets; owner said "add pages, never delete" applies to pages only. If unsure, skip and report.
 
 ## Copy fixes
 
