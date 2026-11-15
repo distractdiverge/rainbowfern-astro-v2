@@ -19,13 +19,13 @@ const { title, description, codeUrl, assets, headerImage, startedDate, lastUpdat
 const { Content } = await render(project);
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description}>
   <article>
     <!-- Desktop only: pinned to the viewport's left edge, level with the hero image.
          No positioned ancestor, so `left` is measured from the page edge, not the column. -->
     <a
       href="/projects"
-      class="hidden whitespace-nowrap text-sm font-semibold text-accent hover:underline lg:absolute lg:left-6 lg:top-[calc(var(--header-h)+2.5rem)] lg:block"
+      class="hidden min-h-11 whitespace-nowrap text-sm font-semibold text-accent hover:underline lg:absolute lg:left-6 lg:top-[calc(var(--header-h)+2.5rem-0.75rem)] lg:flex lg:items-center"
     >← All projects</a>
 
     <header
@@ -41,7 +41,7 @@ const { Content } = await render(project);
       <h1 class="p-6 text-3xl font-bold text-on-scrim sm:text-4xl">{title}</h1>
     </header>
 
-    <p class="mt-4 text-sm text-ink-subtle">
+    <p class="mt-4 text-sm text-ink-subtle tabular-nums">
       Started <time datetime={startedDate.toISOString()}>{formatMonthYear(startedDate)}</time>
       {
         lastUpdated && (
@@ -59,7 +59,7 @@ const { Content } = await render(project);
         href={codeUrl}
         target="_blank"
         rel="noopener noreferrer"
-        class="font-semibold text-accent hover:underline">Code →</a
+        class="inline-flex min-h-11 items-center font-semibold text-accent hover:underline">Code →</a
       >
     </div>
 
@@ -74,7 +74,7 @@ const { Content } = await render(project);
                   href={asset.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-accent hover:underline">{asset.label}</a
+                  class="inline-flex min-h-11 items-center text-accent hover:underline">{asset.label}</a
                 >
               </li>
             ))}
@@ -88,7 +88,7 @@ const { Content } = await render(project);
     </div>
 
     <p class="mt-16 border-t border-line pt-6">
-      <a href="/projects" class="font-semibold text-accent hover:underline">← All projects</a>
+      <a href="/projects" class="inline-flex min-h-11 items-center font-semibold text-accent hover:underline">← All projects</a>
     </p>
   </article>
 </Layout>

@@ -1,8 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ThreeDoors from '../components/ThreeDoors.astro';
 ---
 
-<Layout title="Contact">
+<Layout title="Contact" description="Contact Astrid Lapinski about consulting, mentoring or a paid session.">
   <h1 class="text-3xl font-bold text-heading">Contact</h1>
-  <p class="mt-4 text-ink-soft">Placeholder content for the Contact page.</p>
+  <p class="mt-4 text-ink-soft">Tell me what's going on, and I'll say honestly whether I can help and what it would cost.</p>
+
+  <div class="mt-10">
+    <ThreeDoors />
+  </div>
+
+  <section aria-labelledby="funding-heading" class="mt-12">
+    <h2 id="funding-heading" class="text-2xl font-semibold text-heading">Optional: tell me about your funding</h2>
+    <p class="mt-2 text-ink-soft">Pick whichever fits. It helps me plan the conversation.</p>
+    <ul class="mt-4 list-disc pl-6 text-ink-soft">
+      <li>Needs to be free right now</li>
+      <li>Sliding scale</li>
+      <li>I have a real budget</li>
+      <li>Not sure yet</li>
+    </ul>
+    <p class="mt-6 text-ink-soft">[TBD: confirm wording and whether to add up to three optional questions]</p>
+  </section>
 </Layout>

@@ -2,7 +2,7 @@
 
 Repo-wide list of open items, parked decisions and things to re-review. Check it at the start of any session that touches site content, pricing or positioning. When an item is settled, move it to **Resolved** with the date and where the decision lives.
 
-> **Location:** This file belongs at the repo root. It's currently in `.design-intelligence/` because the session only had access to that folder. Move it with `git mv .design-intelligence/OUTSTANDING-CONSIDERATIONS.md ./`, then update the link in `.design-intelligence/system.md`.
+> **Location:** This file now lives at the repo root. The move from `.design-intelligence/` is done, and the link in `.design-intelligence/system.md` has been updated.
 
 ## Open
 

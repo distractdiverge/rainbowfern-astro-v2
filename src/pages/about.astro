@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import portrait from '../assets/AstridLooktoSide.webp';
+---
+
+<Layout title="About" description="About Astrid Lapinski: 15+ years in software, now a one-person practice for small teams and mentoring.">
+  <h1 class="text-3xl font-bold text-heading">About</h1>
+  <p class="mt-4 text-ink-soft">I'm Astrid Lapinski. I've spent 15+ years in software, from intern to architect, and I now run Rainbowfern, a one-person practice.</p>
+
+  <section class="mt-8 flex flex-col gap-6 md:flex-row md:items-start" aria-label="Story">
+    <Image src={portrait} alt="Astrid Lapinski, in profile" class="rounded-md w-full max-w-xs" />
+    <p class="text-ink-soft">At PayPal I was an engineer, a manager and an architect, including one of three architects on the PayPal Credit platform. Before that I built front-end and back-end systems at agencies and at Swift Capital.</p>
+  </section>
+
+  <section class="mt-12" aria-labelledby="how-i-work-heading">
+    <h2 id="how-i-work-heading" class="text-2xl font-semibold text-heading">How I work</h2>
+    <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-ink-soft">
+      <li>I'm neurodivergent and queer, and I build that into how I work: written agendas before calls, async-friendly communication, no surprise video.</li>
+      <li>I use AI tools as collaborators, and I tell you where and how.</li>
+      <li>I default to open-source, self-hostable, data-sovereign tools, and I explain the trade-offs when I don't.</li>
+      <li>Sliding-scale pricing for co-ops, nonprofits and social-justice organizations. Same quality at every rate. I don't ask about income or identity.</li>
+    </ul>
+  </section>
+
+  <p class="mt-12 text-ink-soft">Looking for my résumé? <a href="/cv" class="text-accent hover:underline inline-flex min-h-11 items-center">It's here.</a></p>
+</Layout>

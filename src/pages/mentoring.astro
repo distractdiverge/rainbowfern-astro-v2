@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ThreeDoors from '../components/ThreeDoors.astro';
+---
+
+<Layout title="Mentoring and coaching" description="Mentoring and coaching for engineers from underrepresented and non-traditional paths, with privacy protected and a sliding scale.">
+  <h1 class="text-3xl font-bold text-heading">Mentoring and coaching</h1>
+  <p class="mt-4 text-ink-soft">I offer mentoring and coaching for engineers, with privacy protected and a sliding scale.</p>
+
+  <section class="mt-12" aria-labelledby="who-heading">
+    <h2 id="who-heading" class="text-2xl font-semibold text-heading">Who this is for</h2>
+    <ul class="mt-4 list-disc space-y-2 pl-6 text-ink-soft">
+      <li>Engineers from underrepresented and non-traditional paths</li>
+      <li>Queer, women, POC and career-changing developers</li>
+    </ul>
+  </section>
+
+  <section class="mt-12" aria-labelledby="privacy-heading">
+    <h2 id="privacy-heading" class="text-2xl font-semibold text-heading">Privacy</h2>
+    <p class="mt-4 text-ink-soft">Pseudonyms and non-work email addresses are welcome. [TBD: what I keep and what gets deleted].</p>
+  </section>
+
+  <section class="mt-12" aria-labelledby="fees-heading">
+    <h2 id="fees-heading" class="text-2xl font-semibold text-heading">Sliding scale</h2>
+    <p class="mt-4 text-ink-soft">The scale runs on the honour system. I don't ask about income or identity. Standard rate [PRICE TBD], floor [PRICE TBD]. Pay what your situation allows. You'll get the same work either way.</p>
+  </section>
+
+  <section class="mt-12" aria-labelledby="wont-heading">
+    <h2 id="wont-heading" class="text-2xl font-semibold text-heading">What I won't do</h2>
+    <p class="mt-4 text-ink-soft">The worst I'll do is say no, kindly.</p>
+    <p class="mt-4 text-ink-soft">I don't do performance management.</p>
+  </section>
+
+  <div class="mt-12">
+    <ThreeDoors />
+  </div>
+</Layout>

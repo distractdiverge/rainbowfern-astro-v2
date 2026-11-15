@@ -101,7 +101,7 @@ const experiences: ExperienceItem[] = [
 ];
 ---
 
-<Layout title="Experience">
+<Layout title="Experience" description="Professional experience of Astrid Lapinski, from engineer to software architect.">
   <h1 class="text-3xl font-bold text-heading">Experience</h1>
   <p class="mt-4 text-ink-soft"> A collection of my professional experiences, showcasing my journey from intern to architect, and my current focus on software development and test automation.</p>
 
@@ -110,7 +110,7 @@ const experiences: ExperienceItem[] = [
           <div>
               <h2 class="text-2xl font-semibold text-heading">{exp.title}</h2>
               <p class="mt-1 text-ink-muted">
-                  {exp.company} {exp.location && `| ${exp.location}`} | <span class="font-mono text-sm text-ink-subtle">{exp.dates}</span>
+                  {exp.company} {exp.location && `| ${exp.location}`} | <span class="font-mono text-sm text-ink-subtle tabular-nums">{exp.dates}</span>
               </p>
               <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-ink-soft">
                   {exp.responsibilities.map((responsibility) => (

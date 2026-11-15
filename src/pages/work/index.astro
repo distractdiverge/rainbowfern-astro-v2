@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const offers = [
+  {
+    name: 'Codebase Map',
+    href: '/work/codebase-map',
+    summary: 'A fixed-scope architecture map of a codebase nobody fully understands, with a prioritized plan for what is safe to change.',
+    price: 'From [PRICE TBD]',
+  },
+  {
+    name: 'Small-business systems',
+    href: '/work/small-business',
+    summary: 'Ethical, self-hostable tools for small businesses and nonprofits, plus a review of regulated AI adoption.',
+    price: 'From [PRICE TBD], sliding scale',
+  },
+  {
+    name: 'Unstuck sessions',
+    href: '/sessions',
+    summary: 'A 60 or 90 minute session to work through one problem, booked and paid online.',
+    price: 'From [PRICE TBD]',
+  },
+  {
+    name: 'Mentoring and coaching',
+    href: '/mentoring',
+    summary: 'Privacy-protected mentoring for engineers on underrepresented and non-traditional paths.',
+    price: 'Sliding scale: standard [PRICE TBD], floor [PRICE TBD]',
+  },
+];
+---
+
+<Layout title="Work with me" description="Four ways to work with Rainbow Fern Consulting: Codebase Map, small-business systems, unstuck sessions, and mentoring and coaching.">
+  <h1 class="text-3xl font-bold text-heading">Work with me</h1>
+  <p class="mt-4 text-ink-soft">I help small teams understand the software and systems they already have, and make them safer to change. Four ways to work together are listed below.</p>
+
+  <ul class="mt-12 space-y-6">
+    {offers.map((offer) => (
+      <li class="rounded-lg bg-card p-5 shadow-paper ring-1 ring-line">
+        <h2 class="text-lg font-semibold text-heading">
+          <a class="underline" href={offer.href}>{offer.name}</a>
+        </h2>
+        <p class="mt-2 text-ink-soft">{offer.summary}</p>
+        <p class="mt-2 text-sm text-ink-subtle">{offer.price}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>

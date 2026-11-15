@@ -1,10 +1,12 @@
 ---
 const links = [
-  { href: '/', label: 'About' },
+  { href: '/', label: 'Home' },
+  { href: '/work', label: 'Work with me' },
+  { href: '/mentoring', label: 'Mentoring' },
+  { href: '/cases', label: 'Case studies' },
+  { href: '/writing', label: 'Writing' },
+  { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
-  { href: '/education', label: 'Education' },
-  { href: '/experience', label: 'Experience' },
-  { href: '/projects', label: 'Projects' },
 ];
 
 // Normalise trailing slashes, then mark "/projects/*" as the Projects page too.
@@ -16,7 +18,7 @@ const isCurrent = (href: string) =>
 <header
   class="header sticky top-0 z-10 flex h-[var(--header-h)] items-center justify-between border-b border-line bg-header px-6 text-on-brand"
 >
-  <a href="/" class="flex items-center gap-2 text-lg font-semibold tracking-wide">
+  <a href="/" class="flex min-h-11 items-center gap-2 text-lg font-semibold tracking-wide">
     <!-- Decorative: the wordmark carries the name, so the fern is hidden from screen readers. -->
     <img src="/brand/rainbow-fern.svg" alt="" width="28" height="28" class="h-7 w-7" />
     Rainbowfern
@@ -30,7 +32,7 @@ const isCurrent = (href: string) =>
             <a
               href={link.href}
               aria-current={isCurrent(link.href) ? 'page' : undefined}
-              class="block rounded-md px-3 py-2 hover:bg-nav-hover focus-visible:outline-2 focus-visible:outline-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent"
+              class="block min-h-11 rounded-md px-3 py-2 hover:bg-nav-hover focus-visible:outline-2 focus-visible:outline-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent"
             >
               {link.label}
             </a>
@@ -42,7 +44,7 @@ const isCurrent = (href: string) =>
 
   <button
     type="button"
-    class="hamburger flex h-10 w-10 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent lg:hidden"
+    class="hamburger flex h-11 w-11 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent lg:hidden"
     popovertarget="mobile-menu"
     popovertargetaction="toggle"
     aria-controls="mobile-menu"

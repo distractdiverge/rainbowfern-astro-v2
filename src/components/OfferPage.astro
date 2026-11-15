@@ -1,0 +1,42 @@
+---
+import ThreeDoors from '../components/ThreeDoors.astro';
+
+interface Props {
+  title: string;
+  problem: string;
+  deliverables: string[];
+  steps: string[];
+  proof: string;
+  priceLine: string;
+  notFor: string;
+}
+
+const { title, problem, deliverables, steps, proof, priceLine, notFor } = Astro.props;
+---
+
+<h1 class="text-3xl font-bold text-heading">{title}</h1>
+<p class="mt-4 text-lg text-ink-soft">{problem}</p>
+
+<h2 class="mt-10 text-2xl font-semibold text-heading">What you get</h2>
+<ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-ink-soft">
+  {deliverables.map((item) => <li>{item}</li>)}
+</ul>
+
+<h2 class="mt-10 text-2xl font-semibold text-heading">How it works</h2>
+<ol class="mt-4 list-decimal list-outside ml-5 space-y-2 text-ink-soft">
+  {steps.map((item) => <li>{item}</li>)}
+</ol>
+
+<h2 class="mt-10 text-2xl font-semibold text-heading">Proof</h2>
+<p class="mt-4 text-ink-soft">{proof}</p>
+
+<p class="mt-8 text-ink-soft">
+  {priceLine}. See the full <a href="/pricing" class="text-accent hover:underline inline-flex min-h-11 items-center">pricing page</a>.
+</p>
+
+<h2 class="mt-10 text-2xl font-semibold text-heading">Who this is not for</h2>
+<p class="mt-4 text-ink-soft">{notFor}</p>
+
+<div class="mt-12">
+  <ThreeDoors />
+</div>

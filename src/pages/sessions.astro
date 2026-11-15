@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ThreeDoors from '../components/ThreeDoors.astro';
+---
+
+<Layout title="Unstuck sessions" description="Unstuck sessions: 60 or 90 minutes on one problem, booked and paid online.">
+  <h1 class="text-3xl font-bold text-heading">Unstuck sessions</h1>
+  <p class="mt-4 text-ink-soft">An Unstuck session is 60 or 90 minutes on one problem. You book it and pay when you book.</p>
+
+  <section class="mt-12" aria-labelledby="cover-heading">
+    <h2 id="cover-heading" class="text-2xl font-semibold text-heading">What we can cover</h2>
+    <ul class="mt-4 list-disc space-y-2 pl-6 text-ink-soft">
+      <li>One problem, scoped in the first five minutes</li>
+      <li>A written summary sent after the session</li>
+    </ul>
+  </section>
+
+  <section class="mt-12" aria-labelledby="price-heading">
+    <h2 id="price-heading" class="text-2xl font-semibold text-heading">Price</h2>
+    <p class="mt-4 text-ink-soft">[PRICE TBD] for 60 min, [PRICE TBD] for 90 min, paid at booking.</p>
+  </section>
+
+  <section class="mt-12">
+    <p class="text-ink-soft">Sessions are a good first step into a Codebase Map, if the problem turns out to be a codebase.</p>
+  </section>
+
+  <div class="mt-12">
+    <ThreeDoors />
+  </div>
+</Layout>
