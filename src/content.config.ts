@@ -38,6 +38,8 @@ const cases = defineCollection({
     order: z.number().int(),
     // Hidden from production builds (index, detail pages, sitemap) while true.
     draft: z.boolean().default(false),
+    // Editorial notes (sources, to-dos). Never rendered; keep out of the body.
+    notes: z.string().optional(),
   }),
 });
 

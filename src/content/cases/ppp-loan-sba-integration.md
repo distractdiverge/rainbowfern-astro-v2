@@ -3,16 +3,14 @@ title: "PPP loans: from concept to live in two weeks"
 description: "Integrating PayPal's small-business lending with the SBA's Paycheck Protection Program, with no documentation and a two-week deadline."
 employer: PayPal (PayPal Credit)
 role: Principal Technical Staff, Software Architecture
-period: 2020
+period: "2020"
 order: 1
 draft: true
+notes: |
+  Source: "0602 Recording: Cybersecurity Integration & PPP Launch at PayPal" + résumé.
+  TO CONFIRM BEFORE PUBLISHING: disclosure is still TBD (OUTSTANDING-CONSIDERATIONS #3).
+  No loan volumes or dollar figures are included on purpose.
 ---
-
-<!--
-Source: "0602 Recording: Cybersecurity Integration & PPP Launch at PayPal" + résumé.
-TO CONFIRM BEFORE PUBLISHING: disclosure is still TBD (OUTSTANDING-CONSIDERATIONS #3).
-No loan volumes or dollar figures are included on purpose.
--->
 
 ## Context
 

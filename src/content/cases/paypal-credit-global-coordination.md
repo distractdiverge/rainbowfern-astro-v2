@@ -5,12 +5,10 @@ employer: PayPal (PayPal Credit)
 role: Principal Technical Staff, Software Architecture
 period: 2019–2023
 order: 5
+notes: |
+  Source: "0818 Integration Summary: PayPal Global Team Coordination and Hiring" (+ transcript),
+  "0602 Recording..." (India presentation) + résumé.
 ---
-
-<!--
-Source: "0818 Integration Summary: PayPal Global Team Coordination and Hiring" (+ transcript),
-"0602 Recording..." (India presentation) + résumé.
--->
 
 ## Context
 

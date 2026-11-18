@@ -5,13 +5,11 @@ employer: Swift Financial (Swift Capital)
 role: Engineering Manager, Backend Web Services
 period: 2015–2017
 order: 4
+notes: |
+  Source: "0715 Case Study: Architectural Conflict Resolution and Innovative Engineer Management" (case 2),
+  "0704 Meeting: Cross-Team Communication..." + résumé.
+  Keep the engineer anonymous.
 ---
-
-<!--
-Source: "0715 Case Study: Architectural Conflict Resolution and Innovative Engineer Management" (case 2),
-"0704 Meeting: Cross-Team Communication..." + résumé.
-Keep the engineer anonymous.
--->
 
 ## Context
 
