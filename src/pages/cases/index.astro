@@ -1,0 +1,68 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCases } from '../../lib/cases';
+
+const cases = await getCases();
+const [lead, ...others] = cases;
+---
+
+<Layout title="Case studies" description="Case studies by Astrid Lapinski: what was built, what was constrained, and what Astrid personally did.">
+  <h1 class="text-3xl font-bold text-heading">Case studies</h1>
+  <p class="mt-4 text-ink-soft">Each case study covers the context, the constraint, what I did, the outcome, and why it matters to a client. I mark which parts I did personally.</p>
+
+  {lead && (
+    <section class="mt-12" aria-labelledby="lead-heading">
+      <h2 id="lead-heading" class="text-2xl font-semibold text-heading">Lead case</h2>
+      <a
+        href={`/cases/${lead.id}`}
+        class="group mt-4 block rounded-md bg-card p-6 shadow-paper ring-1 ring-line transition-shadow hover:shadow-paper-md"
+      >
+        <h3 class="text-xl font-semibold text-heading group-hover:underline">{lead.data.title}</h3>
+        <p class="mt-1 text-sm text-ink-subtle">{lead.data.employer} · {lead.data.role} · {lead.data.period}</p>
+        <p class="mt-3 text-ink-soft">{lead.data.description}</p>
+      </a>
+    </section>
+  )}
+
+  {others.length > 0 && (
+    <section class="mt-12" aria-labelledby="more-heading">
+      <h2 id="more-heading" class="text-2xl font-semibold text-heading">More case studies</h2>
+      <ul class="mt-4 grid gap-6 sm:grid-cols-2">
+        {others.map((entry) => (
+          <li>
+            <a
+              href={`/cases/${entry.id}`}
+              class="group flex h-full flex-col rounded-md bg-card p-5 shadow-paper ring-1 ring-line transition-shadow hover:shadow-paper-md"
+            >
+              <h3 class="font-semibold text-heading group-hover:underline">{entry.data.title}</h3>
+              <p class="mt-1 text-sm text-ink-subtle">{entry.data.employer} · {entry.data.period}</p>
+              <p class="mt-3 text-ink-soft">{entry.data.description}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="mt-12" aria-labelledby="template-heading">
+    <h2 id="template-heading" class="text-2xl font-semibold text-heading">The template</h2>
+    <p class="mt-4 text-ink-soft">Each case study is laid out in these five parts.</p>
+    <ol class="mt-4 list-decimal space-y-2 pl-6 text-ink-soft">
+      <li>Context</li>
+      <li>Constraint</li>
+      <li>What I did</li>
+      <li>Outcome</li>
+      <li>Why it matters to a client</li>
+    </ol>
+  </section>
+
+  <section class="mt-12" aria-labelledby="other-heading">
+    <h2 id="other-heading" class="text-2xl font-semibold text-heading">Other projects</h2>
+    <p class="mt-4 text-ink-soft">The projects I've built on my own are on <a href="/projects" class="text-accent hover:underline inline-flex min-h-11 items-center">The projects page</a>.</p>
+  </section>
+
+  <section class="mt-12" aria-labelledby="confidentiality-heading">
+    <h2 id="confidentiality-heading" class="text-2xl font-semibold text-heading">Note on confidentiality</h2>
+    <p class="mt-4 text-ink-soft">[TBD: how figures are shared. 'Volumes are confidential' is itself a credibility signal.]</p>
+  </section>
+</Layout>

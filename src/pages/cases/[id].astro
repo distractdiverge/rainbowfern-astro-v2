@@ -1,0 +1,41 @@
+---
+import { render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { getCases, type Case } from '../../lib/cases';
+
+export async function getStaticPaths() {
+  const cases = await getCases();
+  return cases.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+interface Props {
+  entry: Case;
+}
+
+const { entry } = Astro.props;
+const { title, description, employer, role, period } = entry.data;
+const { Content } = await render(entry);
+---
+
+<Layout title={title} description={description} article>
+  <article>
+    <a
+      href="/cases"
+      class="hidden min-h-11 whitespace-nowrap text-sm font-semibold text-accent hover:underline lg:absolute lg:left-6 lg:top-[calc(var(--header-h)+2.5rem-0.75rem)] lg:flex lg:items-center"
+    >← All case studies</a>
+
+    <header class="max-w-3xl">
+      <h1 class="text-3xl font-bold text-heading sm:text-4xl">{title}</h1>
+      <p class="mt-4 text-sm text-ink-subtle">{employer} · {role} · {period}</p>
+      <p class="mt-6 text-lg text-ink-soft">{description}</p>
+    </header>
+
+    <div class="prose mt-10 max-w-none">
+      <Content />
+    </div>
+
+    <p class="mt-16 border-t border-line pt-6">
+      <a href="/cases" class="inline-flex min-h-11 items-center font-semibold text-accent hover:underline">← All case studies</a>
+    </p>
+  </article>
+</Layout>
