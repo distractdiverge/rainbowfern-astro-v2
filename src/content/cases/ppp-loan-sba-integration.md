@@ -5,6 +5,7 @@ employer: PayPal (PayPal Credit)
 role: Principal Technical Staff, Software Architecture
 period: 2020
 order: 1
+draft: true
 ---
 
 <!--

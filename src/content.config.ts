@@ -25,4 +25,20 @@ const projects = defineCollection({
       }),
 });
 
-export const collections = { projects };
+const cases = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cases' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    employer: z.string(),
+    role: z.string(),
+    // Free text on purpose (e.g. "2015–2017"); not sorted by date.
+    period: z.string(),
+    // Editorial display order, not chronology. Lowest comes first.
+    order: z.number().int(),
+    // Hidden from production builds (index, detail pages, sitemap) while true.
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { projects, cases };
