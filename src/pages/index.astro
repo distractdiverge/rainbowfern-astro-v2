@@ -3,6 +3,9 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import ThreeDoors from '../components/ThreeDoors.astro';
 import portrait from '../assets/AstridLooktoFront.webp';
+import { getCases } from '../lib/cases';
+
+const [leadCase] = await getCases();
 
 const offers = [
   {
@@ -65,7 +68,7 @@ const offers = [
 
   <section class="mt-12">
     <h2 class="text-2xl font-semibold text-heading">Proof</h2>
-    <p class="mt-4 text-ink-soft">[TBD: two-sentence teaser of the lead case study, see /cases]</p>
+    {leadCase && <p class="mt-4 text-ink-soft">{leadCase.data.title}. {leadCase.data.description}</p>}
     <a href="/cases" class="mt-4 text-accent hover:underline inline-flex min-h-11 items-center">Read the case studies</a>
   </section>
 
