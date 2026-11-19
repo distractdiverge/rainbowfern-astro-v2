@@ -20,6 +20,7 @@ Source of truth for rainbowfern.com. Read this first in every session.
 - **Core task:** Evaluate, then act. Answer, in order: what Astrid fixes and for whom, why to trust Astrid, what the next step costs, and how to start.
 - **Offers:** Codebase Map (flagship), Small-business systems, Mentoring, and Unstuck sessions as the on-ramp. These are working names. See [[content-strategy]].
 - **Core value:** Run as anti-capitalist and pro-socialist as possible: no ads, no trackers beyond basic privacy-respecting analytics, sliding scale, co-ops first. On the site it's subtle, hidden in plain sight for people who know. See [[voice]].
+- **Hosting:** Netlify (static Astro build), with its optional data-collecting features turned off. Chosen for nearly free, serverless hosting; not changing in the near term. No analytics run yet (see [[OUTSTANDING-CONSIDERATIONS]] #7).
 - **Name and contact:** Astrid Lapinski ("Alex" is being phased out and appears only on legal paperwork). Published email: contact@rainbowfern.com.
 - **Feel:** A crisp, clean sheet of paper, split into small, digestible sections: "clean, no-nonsense, focused on perfection without clutter."
 - **Light theme:** Ink black on warm off-white paper.

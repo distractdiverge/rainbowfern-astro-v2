@@ -26,7 +26,8 @@ Proposed additions and words to avoid are in [[voice]].
 - **Show values as policies:** sliding scale, capacity, open-source defaults, AI use. See [[voice]].
 - **Keep availability honest and dated** on `/now`. Remove offers Astrid no longer takes.
 - **Keep the main nav to 7 items at most.** Secondary pages go in the footer.
-- **No ads. No third-party trackers or tag managers.** Basic, privacy-respecting site analytics only: cookieless, no personal data, and hosted on Netlify. Say so on `/privacy`. *Confirmed by the owner 2026-11-12 as part of the anti-capitalist core value.*
+- **No ads. No third-party trackers or tag managers.** If analytics are added, basic and privacy-respecting only: cookieless, no personal data. No analytics run yet; the tool is still open (Outstanding #7). Say so on `/privacy`. *Confirmed by the owner 2026-11-12 as part of the anti-capitalist core value.*
+- **Host on Netlify** with its optional data-collecting features turned off. It's nearly free, serverless hosting at minimal cost, and it stays in the near term. Name it on `/privacy` and in the colophon. *Confirmed by the owner 2026-11-19.*
 - **Include a skip link, landmarks and one `<h1>` per page.** This ensures the markup of the content defines the document structure. *Confirmed by the owner 2026-11-19 as part of semantic html and accessibility*
 - **Use SVG icons with `aria-hidden` for quirks,** not emoji.
 - **Keep the body measure at 550 to 700px.**

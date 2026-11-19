@@ -14,7 +14,7 @@ Repo-wide list of open items, parked decisions and things to re-review. Check it
 | 4 | **Published email** | contact@rainbowfern.com chosen, astrid@ for direct replies | Set up contact@ (Proton) and confirm it forwards or is checked. Make sure hello@ stays for automated mail only. | content-strategy |
 | 5 | **Phase out "Alex"** | Decided (use "Astrid Lapinski") | Search `src/` and `public/` for "Alex" (copy, `<title>`, meta, footer, JSON-LD, résumé PDF) and replace. Legal paperwork only keeps it. | `.design-intelligence/system.md` |
 | 6 | **Anti-capitalist signals: which ones to use** | Approach decided (subtle, hidden in plain sight) | Pick 3 or 4 signals from the voice guide (e.g. solidarity rate, "pay what your situation allows," fee allocation, "bread and roses" easter egg, colophon). Avoid stacking them on one page. | `.design-intelligence/foundations/voice.md` |
-| 7 | **Analytics tool** | Basic, privacy-respecting analytics only | Choose one: cookieless, no personal data, ideally self-hosted or a small values-aligned provider (e.g. GoatCounter, Plausible, Umami). Name it on `/privacy`. | principles, `/privacy` |
+| 7 | **Analytics tool** | None running (2026-11-19). Site is hosted on Netlify | If analytics are wanted, choose one: cookieless, no personal data, ideally self-hosted or a small values-aligned provider (e.g. GoatCounter, Plausible, Umami). Name it on `/privacy`, which currently says no analytics run. | principles, `/privacy` |
 | 8 | **AI crawler stance** | Allow all, for search and training (2026-11-12) | Revisit if the ethical-AI stance changes or a training opt-out becomes meaningful. Keep `robots.txt` open until then. | `.design-intelligence/foundations/legibility.md` |
 | 9 | **Testimonials** | Not started | Ask past mentees and colleagues for 2 to 4 short testimonials: full name and title, about a concrete change. | voice |
 | 10 | **Scheduler** | Calendly in use | Optional: evaluate an open-source scheduler for values alignment. | content-strategy |
@@ -28,3 +28,4 @@ Repo-wide list of open items, parked decisions and things to re-review. Check it
 | 2026-11-12 | Anti-capitalism as a core value | As anti-capitalist and pro-socialist as possible. No ads, no trackers beyond basic analytics. Subtle on the site. | `.design-intelligence/decisions/003-owner-decisions-2026-11-12.md` |
 | 2026-11-12 | Name on the site | Astrid Lapinski | decision 003 |
 | 2026-11-12 | AI crawlers | Allowed, for search and training | decision 003 |
+| 2026-11-19 | Hosting | Netlify, with optional data-collecting features off. Nearly free serverless hosting; not changing in the near term. | `.design-intelligence/foundations/principles.md`, `.design-intelligence/audit/DOC-CONFLICTS.md` (C1) |

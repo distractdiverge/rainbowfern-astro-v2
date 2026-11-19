@@ -67,7 +67,7 @@ Pattern: be explicit about **who you prioritize**, not about who you exclude. Ma
 - **Who comes first:** "Co-ops, worker-owned businesses, nonprofits and community groups come first."
 - **Where the money goes:** a fee-allocation note on `/pricing` (pay, health care, the solidarity pool, tools, learning). It quietly says "not shareholders."
 - **"Bread and roses"** as a small easter egg: a footer line, a `/now` sign-off, or a tiny rose among the site's icon quirks. People who know labor history will catch it; everyone else sees a nice phrase.
-- **Colophon:** built with open-source tools, hosted independently, no ads, no trackers.
+- **Colophon:** built with open-source tools, hosted on Netlify for nearly free, no ads, no trackers. Name the trade-off plainly (low-cost serverless hosting over self-hosting); that's the "I explain the trade-offs when I don't" policy in action.
 
 **Avoid:** party symbols and slogans, and anything that makes a small-business client feel judged for running a business. The critique is aimed at extraction, not at the people Astrid serves.
 
