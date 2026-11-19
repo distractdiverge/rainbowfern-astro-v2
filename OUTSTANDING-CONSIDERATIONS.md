@@ -18,7 +18,7 @@ Repo-wide list of open items, parked decisions and things to re-review. Check it
 | 8 | **AI crawler stance** | Allow all, for search and training (2026-11-12) | Revisit if the ethical-AI stance changes or a training opt-out becomes meaningful. Keep `robots.txt` open until then. | `.design-intelligence/foundations/legibility.md` |
 | 9 | **Testimonials** | Not started | Ask past mentees and colleagues for 2 to 4 short testimonials: full name and title, about a concrete change. | voice |
 | 10 | **Scheduler** | Calendly in use | Optional: evaluate an open-source scheduler for values alignment. | content-strategy |
-| 11 | **Confirm the remaining proposed rules** | Proposed | Review the "Proposed 2026-11-12" sections in principles and voice, and mark each confirmed or rejected. | principles, voice |
+| 11 | **Confirm the remaining proposed rules** | Principles done 2026-11-19, except the body measure. Voice still proposed | Settle the body measure (DOC-CONFLICTS C7). Review voice's proposed parts (rules, vocabulary additions, values lines, signals) and mark each confirmed or rejected. | voice, `.design-intelligence/decisions/004-owner-decisions-2026-11-19.md` |
 
 ## Resolved
 
@@ -28,4 +28,5 @@ Repo-wide list of open items, parked decisions and things to re-review. Check it
 | 2026-11-12 | Anti-capitalism as a core value | As anti-capitalist and pro-socialist as possible. No ads, no trackers beyond basic analytics. Subtle on the site. | `.design-intelligence/decisions/003-owner-decisions-2026-11-12.md` |
 | 2026-11-12 | Name on the site | Astrid Lapinski | decision 003 |
 | 2026-11-12 | AI crawlers | Allowed, for search and training | decision 003 |
+| 2026-11-19 | Principles: trust and contact, conversion anti-patterns | Confirmed, except the body measure (pending C7) | `.design-intelligence/decisions/004-owner-decisions-2026-11-19.md` |
 | 2026-11-19 | Hosting | Netlify, with optional data-collecting features off. Nearly free serverless hosting; not changing in the near term. | `.design-intelligence/foundations/principles.md`, `.design-intelligence/audit/DOC-CONFLICTS.md` (C1) |

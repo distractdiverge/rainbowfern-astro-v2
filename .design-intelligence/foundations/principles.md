@@ -1,6 +1,6 @@
 # Principles
 
-**Status:** Phase 2 rules are confirmed by the owner (unchanged below). Anti-capitalism is a confirmed core value (2026-11-12), expressed subtly. See [[voice]]. The sections marked *Proposed 2026-11-12* come from [[case-study-2026-11]] and [[example-sites-observations]], and need owner confirmation. The previous version is in `archive/2026-11-08/principles.md`.
+**Status:** Phase 2 rules are confirmed by the owner (unchanged below). Anti-capitalism is a confirmed core value (2026-11-12), expressed subtly. See [[voice]]. "Trust and contact" and "Conversion anti-patterns," first proposed 2026-11-12 from [[case-study-2026-11]] and [[example-sites-observations]], were confirmed by the owner 2026-11-19 (see [[004-owner-decisions-2026-11-19]]). The one exception is the body measure, which stays proposed until its value is settled. The previous version is in `archive/2026-11-08/principles.md`.
 
 ## Vocabulary (use in copy and section labels)
 
@@ -18,7 +18,7 @@ Proposed additions and words to avoid are in [[voice]].
 - Mark the rainbow fern as decorative (`alt=""` or `aria-hidden`). Never use color alone to convey meaning.
 - Use the owner's own photos (self-portrait, Shadow the dog, nature photos) wherever possible.
 
-### trust and contact
+### Trust and contact (confirmed 2026-11-19)
 
 - **Say what Astrid fixes, and for whom, in the first screen,** as one `<h1>` and one literal paragraph.
 - **Put a price or price range on every offer,** linked to one canonical `/pricing` page. (readers shouldn't have to hunt for it)
@@ -30,7 +30,7 @@ Proposed additions and words to avoid are in [[voice]].
 - **Host on Netlify** with its optional data-collecting features turned off. It's nearly free, serverless hosting at minimal cost, and it stays in the near term. Name it on `/privacy` and in the colophon. *Confirmed by the owner 2026-11-19.*
 - **Include a skip link, landmarks and one `<h1>` per page.** This ensures the markup of the content defines the document structure. *Confirmed by the owner 2026-11-19 as part of semantic html and accessibility*
 - **Use SVG icons with `aria-hidden` for quirks,** not emoji.
-- **Keep the body measure at 550 to 700px.**
+- **Keep the body measure at 550 to 700px.** *Proposed: the value conflicts with the `65ch` typography token and the ~720px layout. Settle it under C7 in `audit/DOC-CONFLICTS.md`.*
 
 ## We will not
 
@@ -42,7 +42,7 @@ Proposed additions and words to avoid are in [[voice]].
 - **Stock or random placeholder photos** in the final site.
 - **Skill bars**, stock hero imagery, and animated blobs, as a default. Show actual data & results not flashy graphs.
 
-### Proposed 2026-11-12: conversion anti-patterns
+### Conversion anti-patterns (confirmed 2026-11-19)
 
 - **Abstract or visionary heroes** that delay saying what Astrid does.
 - **Pop-up modals,** newsletter interstitials, countdowns, or false scarcity.

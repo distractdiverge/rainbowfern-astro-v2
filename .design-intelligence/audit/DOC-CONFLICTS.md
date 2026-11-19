@@ -8,9 +8,12 @@ Legend: [ ] open, [x] resolved, with the date and what changed. Work top to bott
 
 - [x] **C1 Hosting and analytics.** `principles.md` said analytics is "hosted on Netlify." That clashed with Outstanding #7 (analytics tool undecided), `/privacy` (`[TBD: name the analytics tool]`), and "hosted independently" in the `voice.md` colophon line and the `content-strategy.md` colophon note.
   - *Resolved 2026-11-19:* the site is hosted on Netlify, with its optional data-collecting features turned off, and that won't change in the near term. Owner rationale: nearly free, serverless hosting at minimal cost. No analytics runs yet, so #7 stays open. Updated: `principles.md`, `voice.md`, `content-strategy.md`, `system.md`, `OUTSTANDING-CONSIDERATIONS.md`, `src/pages/privacy.astro`.
-- [ ] **C2 "Trust and contact" status is ambiguous.** *Needs owner.* The "Proposed 2026-11-12" label was removed from that heading in `principles.md`, which reads as confirming the whole section, but only the skip-link bullet says "Confirmed 2026-11-19."
+- [x] **C2 "Trust and contact" status is ambiguous.** The "Proposed 2026-11-12" label was removed from that heading in `principles.md`, which reads as confirming the whole section, but only the skip-link bullet says "Confirmed 2026-11-19."
   - Stale as a result: the `principles.md` status line, `system.md` Phase 2 ("trust, contact and voice rules are proposed"), the `voice.md` status line ("the rest is proposed"), and Outstanding #11.
   - There's no decision record for 2026-11-19. Decisions 001–003 suggest a `decisions/004`.
+  - *Resolved 2026-11-19:* the owner confirmed all "Trust and contact" rules except the body measure, which stays proposed under C7. The owner also confirmed the conversion anti-patterns. Recorded in `decisions/004-owner-decisions-2026-11-19.md`, which also covers C1's Netlify decision.
+  - Updated: the `principles.md` status line and both headings, `system.md` (Phase 2, Rejected, decisions list), and Outstanding #11 plus a Resolved row.
+  - The `voice.md` status line turned out to be accurate, since voice wasn't part of this decision. It's left as is, and Outstanding #11 still tracks it.
 - [ ] **C3 The AI-use line lost its disclosure promise.** *Needs owner.*
   - `voice.md` changed "I use AI tools as collaborators, and I tell you where and how" to "…enhance existing skills, and tell you where and how to do the same yourself." The disclosure was the mechanism; `principles.md` lists "AI use" under "Show values as policies."
   - The new line is missing an "I" ("and *I* tell you").
@@ -36,6 +39,6 @@ Legend: [ ] open, [x] resolved, with the date and what changed. Work top to bott
 ## Typos and small fixes
 
 - [ ] **C10** In `voice.md`: "colour" should be "color" (in the readability rule), "ot" should be "to" (in the testimonials line), and "SwiftFinancial" should be "Swift Financial."
-- [ ] **C11** In `principles.md`: "accomodated" should be "accommodated," and the heading "trust and contact" should be "Trust and contact."
+- [ ] **C11** In `principles.md`: "accomodated" should be "accommodated." (The heading "trust and contact" was fixed under C2.)
 
 Related: [[OUTSTANDING-CONSIDERATIONS]], [[system]]
