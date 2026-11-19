@@ -45,7 +45,7 @@ The values-forward sites that still get hired state their values as operating pr
 - "I use AI tools to extend skills I already have, not to replace them. I tell you where I used them on your work, and I'll show you how to do the same yourself." *Chosen by the owner 2026-11-19: it keeps the disclosure promise and adds teaching.*
 - "I default to open-source, self-hostable, data-sovereign tools, and I explain the trade-offs when I don't."
 - "Sliding-scale pricing for co-ops, nonprofits and social-justice organizations. Same quality at every rate. I don't ask about income or identity."
-- "My aim is to bring the skills I learned over decades to those just entering tech or trying to build something."
+- "My aim is to bring the skills I've learned over nearly two decades to people just entering tech or trying to build something." *Owner's choice 2026-11-19: mentees first, on purpose, so this line leans toward the mentoring track. The career count starts in 2007, so "nearly two decades" becomes "two decades" in 2027.*
 
 Pattern: be explicit about **who you prioritize**, not about who you exclude. Mandy Brown, Meena Das and Tatiana Mac each name systems of oppression directly and still sell to companies.
 
