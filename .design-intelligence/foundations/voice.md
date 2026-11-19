@@ -42,7 +42,7 @@ Also avoid:
 The values-forward sites that still get hired state their values as operating practices. Draft lines for "How I work" (to edit):
 
 - "I'm neurodivergent and queer, and I build that into how I work: written agendas before calls, async-friendly communication, no surprise video."
-- "I use AI tools as ways to enhance existing skills, and tell you where and how to do the same yourself."
+- "I use AI tools to extend skills I already have, not to replace them. I tell you where I used them on your work, and I'll show you how to do the same yourself." *Chosen by the owner 2026-11-19: it keeps the disclosure promise and adds teaching.*
 - "I default to open-source, self-hostable, data-sovereign tools, and I explain the trade-offs when I don't."
 - "Sliding-scale pricing for co-ops, nonprofits and social-justice organizations. Same quality at every rate. I don't ask about income or identity."
 - "My aim is to bring the skills I learned over decades to those just entering tech or trying to build something."
