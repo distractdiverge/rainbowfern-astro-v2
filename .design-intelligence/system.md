@@ -7,7 +7,7 @@ Source of truth for rainbowfern.com. Read this first in every session.
 | Phase | Status | Notes |
 |-------|--------|-------|
 | 1. Context | Done (revised) | Confirmed 2026-11-12: clients are the primary readers, and recruiters move to `/cv`. See [[002-clients-first]]. The recruiter-first version was considered and discarded (`archive/2026-11-08/`). |
-| 2. Domain | Done, with additions proposed | Vocabulary, colors, signature and rejected defaults are confirmed. Anti-capitalist core value confirmed 2026-11-12. Other new trust, contact and voice rules are proposed in [[principles]] and [[voice]]. |
+| 2. Domain | Done, with additions proposed | Vocabulary, colors, signature and rejected defaults are confirmed. Anti-capitalist core value confirmed 2026-11-12. Trust and contact rules and conversion anti-patterns in [[principles]] confirmed 2026-11-19, except the body measure (see [[004-owner-decisions-2026-11-19]]). Most of [[voice]] is still proposed. |
 | 3. Direction & tokens | Done | Utility 70% + Warmth 30%, confirmed. Content direction added in [[direction]]. Tokens unchanged. |
 | 4. Design & create | Partly done | Tokens applied (see `decisions/001`). Next: build the pages in [[content-strategy]]. |
 | 5. Document & handoff | Not started | |
@@ -28,7 +28,7 @@ Source of truth for rainbowfern.com. Read this first in every session.
 - **Signature element:** The rainbow fern icon, with six solid rainbow leaves. Also small icons and quirks across the site, and purple accents.
 - **Imagery:** Self-portrait, Shadow the dog, and nature photos the owner took.
 - **Voice:** An engineering design doc with warmth. Values shown as policies. See [[voice]].
-- **Rejected:** Overly complex animation, overly complex visuals, dense text, gradients of any kind, ads, and third-party trackers. Proposed additions: pop-ups, autoplay motion, abstract heroes.
+- **Rejected:** Overly complex animation, overly complex visuals, dense text, gradients of any kind, ads, and third-party trackers. Conversion anti-patterns confirmed 2026-11-19: pop-ups, false scarcity, autoplay or background motion, abstract heroes, long forms, scheduler-only contact, values as slogans, placeholder pages.
 - **Strictness:** `strict` (see [[principles]]).
 
 ## Files
@@ -50,6 +50,7 @@ Source of truth for rainbowfern.com. Read this first in every session.
   - `001-apply-tokens-to-site.md`: applied
   - [[002-clients-first]]: accepted
   - [[003-owner-decisions-2026-11-12]]: name, email, offers, prices, PPP, anti-capitalism, AI crawlers
+  - [[004-owner-decisions-2026-11-19]]: trust and contact rules, conversion anti-patterns, Netlify hosting
 - `tokens/`: unchanged
 - `archive/2026-11-08/`: previous versions of system, audience, direction and principles, kept as a record of what was considered and discarded
 
