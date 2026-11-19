@@ -14,10 +14,11 @@ Legend: [ ] open, [x] resolved, with the date and what changed. Work top to bott
   - *Resolved 2026-11-19:* the owner confirmed all "Trust and contact" rules except the body measure, which stays proposed under C7. The owner also confirmed the conversion anti-patterns. Recorded in `decisions/004-owner-decisions-2026-11-19.md`, which also covers C1's Netlify decision.
   - Updated: the `principles.md` status line and both headings, `system.md` (Phase 2, Rejected, decisions list), and Outstanding #11 plus a Resolved row.
   - The `voice.md` status line turned out to be accurate, since voice wasn't part of this decision. It's left as is, and Outstanding #11 still tracks it.
-- [ ] **C3 The AI-use line lost its disclosure promise.** *Needs owner.*
+- [x] **C3 The AI-use line lost its disclosure promise.**
   - `voice.md` changed "I use AI tools as collaborators, and I tell you where and how" to "…enhance existing skills, and tell you where and how to do the same yourself." The disclosure was the mechanism; `principles.md` lists "AI use" under "Show values as policies."
   - The new line is missing an "I" ("and *I* tell you").
   - `src/pages/about.astro:20` still has the old line.
+  - *Resolved 2026-11-19:* the owner chose a combined line that keeps the disclosure and adds teaching: "I use AI tools to extend skills I already have, not to replace them. I tell you where I used them on your work, and I'll show you how to do the same yourself." Updated in `voice.md` (values lines) and `src/pages/about.astro` ("How I work"). The "AI use" policy in `principles.md` needed no change.
 - [ ] **C4 The new "My aim…" line pulls toward mentees.** *Needs owner.*
   - "Those just entering tech or trying to build something" puts mentees front and centre, but they're priority 2 in `audience.md` and decision 002. Small-business owners and founders are priority 1.
   - "Decades" needs to be true and consistent with the "15+ years" claim in `content-strategy.md`.
