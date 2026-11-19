@@ -15,6 +15,7 @@ Write like an engineering design doc with warmth: plain, specific and honest abo
 - **First person, singular.** Rainbowfern is a company of one. Don't use "we" or "our team."
 - **Short chunks.** One idea per paragraph, a heading every few paragraphs. No walls of text (rule from [[principles]]).
 - **People with unstated pronouns get they/them** in examples and copy.
+- **Plain sentences, no jargon without a gloss.** The site has to be accessible and easy to read for anyone with any type of disability. Keep sentences short, define a technical term the first time it appears, and don't rely on colour, icons or emoji to carry meaning in copy.
 
 ## Vocabulary (carried over, confirmed)
 
@@ -31,7 +32,8 @@ Also avoid growth-at-all-costs language: hustle, scale (as a goal in itself), di
 Also avoid:
 
 - Tidy triads of abstractions ("innovation, excellence, and impact").
-- Testimonials about how life-changing Astrid is.
+- Poetic or ornamental phrasing. If a sentence would work better as a greeting card, rewrite it as a plain statement of what the page covers.
+- Testimonials about how life-changing Astrid is, we want ot advertise work not a messiah.
 - Emoji in headings and buttons, because screen readers announce them.
 - False urgency ("only 2 spots left!") unless it's a real, dated capacity statement.
 
@@ -40,9 +42,10 @@ Also avoid:
 The values-forward sites that still get hired state their values as operating practices. Draft lines for "How I work" (to edit):
 
 - "I'm neurodivergent and queer, and I build that into how I work: written agendas before calls, async-friendly communication, no surprise video."
-- "I use AI tools as collaborators, and I tell you where and how."
+- "I use AI tools as ways to enhance existing skills, and tell you where and how to do the same yourself."
 - "I default to open-source, self-hostable, data-sovereign tools, and I explain the trade-offs when I don't."
 - "Sliding-scale pricing for co-ops, nonprofits and social-justice organizations. Same quality at every rate. I don't ask about income or identity."
+- "My aim is to bring the skills I learned over decades to those just entering tech or trying to build something."
 
 Pattern: be explicit about **who you prioritize**, not about who you exclude. Mandy Brown, Meena Das and Tatiana Mac each name systems of oppression directly and still sell to companies.
 
@@ -64,13 +67,14 @@ Pattern: be explicit about **who you prioritize**, not about who you exclude. Ma
 - **Who comes first:** "Co-ops, worker-owned businesses, nonprofits and community groups come first."
 - **Where the money goes:** a fee-allocation note on `/pricing` (pay, health care, the solidarity pool, tools, learning). It quietly says "not shareholders."
 - **"Bread and roses"** as a small easter egg: a footer line, a `/now` sign-off, or a tiny rose among the site's icon quirks. People who know labor history will catch it; everyone else sees a nice phrase.
-- **Colophon:** built with open-source tools, hosted independently, no ads, no trackers.
+- **Colophon:** built with open-source tools, hosted on Netlify for nearly free, no ads, no trackers. Name the trade-off plainly (low-cost serverless hosting over self-hosting); that's the "I explain the trade-offs when I don't" policy in action.
 
 **Avoid:** party symbols and slogans, and anything that makes a small-business client feel judged for running a business. The critique is aimed at extraction, not at the people Astrid serves.
 
 ## Proof copy
 
 - Name employers and specifics: PayPal, PayPal Credit, Swift Financial, Razorfish, Drexel.
+  - PayPal Credit was the old "Bill Me Later", I moved to PayPal Credit as part of the SwiftFinancial Acquisition. PayPal and PayPal credit can be considered the same entity, mostly.
 - Testimonials, when Astrid collects them: full name and title, and about a concrete change, not about Astrid's personality (Lara Hogan's pattern).
 - Mark what Astrid personally did versus what a team did.
 

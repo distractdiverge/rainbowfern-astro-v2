@@ -5,12 +5,10 @@ employer: Swift Financial (Swift Capital)
 role: Lead Software Engineer
 period: 2015–2017
 order: 3
+notes: |
+  Source: "0818 Project Summary: API Performance Optimization",
+  "0715 Case Study: Architectural Conflict Resolution..." (case 1) + résumé.
 ---
-
-<!--
-Source: "0818 Project Summary: API Performance Optimization",
-"0715 Case Study: Architectural Conflict Resolution..." (case 1) + résumé.
--->
 
 ## Context
 

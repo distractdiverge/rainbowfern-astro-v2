@@ -12,34 +12,35 @@ Proposed additions and words to avoid are in [[voice]].
 
 - Keep every section short, scannable, and split into small chunks.
 - Make text easy to read: plain language, generous line height, clear hierarchy.
-- Design for accessibility first. Meet WCAG AA at minimum.
+- Design for accessibility first. Meet WCAG AA at minimum. (All users must feel accomodated while browsing, blind, deaf, autistic, neurotypical, etc)
 - Use solid colors only.
 - Use minor, subtle CSS animations, each with a graceful fallback under `prefers-reduced-motion`.
 - Mark the rainbow fern as decorative (`alt=""` or `aria-hidden`). Never use color alone to convey meaning.
 - Use the owner's own photos (self-portrait, Shadow the dog, nature photos) wherever possible.
 
-### Proposed 2026-11-12: trust and contact
+### trust and contact
 
 - **Say what Astrid fixes, and for whom, in the first screen,** as one `<h1>` and one literal paragraph.
-- **Put a price or price range on every offer,** linked to one canonical `/pricing` page.
+- **Put a price or price range on every offer,** linked to one canonical `/pricing` page. (readers shouldn't have to hunt for it)
 - **End every offer page with the three doors:** free intro call, paid session, plain email.
 - **Show values as policies:** sliding scale, capacity, open-source defaults, AI use. See [[voice]].
 - **Keep availability honest and dated** on `/now`. Remove offers Astrid no longer takes.
 - **Keep the main nav to 7 items at most.** Secondary pages go in the footer.
-- **No ads. No third-party trackers or tag managers.** Basic, privacy-respecting site analytics only: cookieless, no personal data, and ideally self-hosted or from a small values-aligned provider (for example GoatCounter, Plausible or Umami). Say so on `/privacy`. *Confirmed by the owner 2026-11-12 as part of the anti-capitalist core value.*
-- **Include a skip link, landmarks and one `<h1>` per page.** Only half the sample does.
+- **No ads. No third-party trackers or tag managers.** If analytics are added, basic and privacy-respecting only: cookieless, no personal data. No analytics run yet; the tool is still open (Outstanding #7). Say so on `/privacy`. *Confirmed by the owner 2026-11-12 as part of the anti-capitalist core value.*
+- **Host on Netlify** with its optional data-collecting features turned off. It's nearly free, serverless hosting at minimal cost, and it stays in the near term. Name it on `/privacy` and in the colophon. *Confirmed by the owner 2026-11-19.*
+- **Include a skip link, landmarks and one `<h1>` per page.** This ensures the markup of the content defines the document structure. *Confirmed by the owner 2026-11-19 as part of semantic html and accessibility*
 - **Use SVG icons with `aria-hidden` for quirks,** not emoji.
 - **Keep the body measure at 550 to 700px.**
 
 ## We will not
 
-- **Overly complex animation.** Motion must be minor and subtle.
-- **Overly complex visuals.** Keep layouts and decoration simple.
+- **Overly complex animation.** Motion must be minor and subtle, and must ALWAYS honor 'prefers-reduced-motion' first.
+- **Overly complex visuals.** Keep layouts and decoration simple, easy to read and skim is high priority.
 - **Dense text.** No walls of copy.
 - **Gradients.** Solid colors only, including placeholders, overlays and images used as backgrounds.
 - **Pure black (#000) or pure gray.** Tint all neutrals.
 - **Stock or random placeholder photos** in the final site.
-- **Skill bars**, stock hero imagery, and animated blobs, as a default. These are typical of the category, not rejected by the owner, so treat them as strong suggestions to avoid.
+- **Skill bars**, stock hero imagery, and animated blobs, as a default. Show actual data & results not flashy graphs.
 
 ### Proposed 2026-11-12: conversion anti-patterns
 
@@ -54,7 +55,7 @@ Proposed additions and words to avoid are in [[voice]].
 
 ## Signature elements
 
-1. **Rainbow fern icon** (`src/assets/fern-colors-web.svg`). Six solid fills: red, orange, yellow, green, blue, purple. Used as the logo and as a recurring icon.
+1. **Rainbow fern icon** (`src/assets/fern-colors-web.svg`). Six solid fills: red, orange, yellow, green, blue, purple. Used as the logo and as a recurring icon - Ferns don't have flowers they're functional but also pretty without being flashy. The rainbow is a nod to queerness and strength through diversity.
 2. **Accent colors** carry the rainbow and purple identity.
 3. **Small quirks and icons** across the site.
 4. **Personal imagery:** self-portrait, Shadow the dog, and nature photos. These carry the themes of nature, queerness, dogs, and inclusiveness.
@@ -63,8 +64,8 @@ Queerness and inclusiveness appear through imagery, accent colors, and copy. The
 
 ## Color rules
 
-- **Light:** ink black on off-white paper. Tinted neutrals, not `#fff` and not zero-chroma gray. Jacob Kaplan-Moss's, Philip Morgan's and Sara Soueidan's sites are working examples.
-- **Dark:** terminal-style near-black background, not `#000`. Purple accents. Mandy Brown's fee page shows lavender-on-purple at 8.25:1.
+- **Light:** ink black on barely off-white paper. Tinted neutrals, not `#fff` and not zero-chroma gray. Jacob Kaplan-Moss's, Philip Morgan's and Sara Soueidan's sites are working examples.
+- **Dark:** terminal-style near-black background, not `#000` to increase readability. Purple accents. Mandy Brown's fee page shows lavender-on-purple at 8.25:1.
 - **Accent text on light:** use the deep purple (`purple-700`) for text and links. Lighter lavender is for decoration and fills only.
 - **Body text:** avoid light gray body copy, even when it passes AA. Philip Morgan's `#6c6c6c` at about 5:1 reads faint.
 - Verify contrast ratios when tokens are set.

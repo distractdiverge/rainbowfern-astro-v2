@@ -2,13 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Privacy" description="Privacy at Rainbowfern: no ads, no third-party trackers, and basic privacy-respecting analytics only.">
+<Layout title="Privacy" description="Privacy at Rainbowfern: no ads, no third-party trackers, and no analytics. The site is hosted on Netlify.">
   <h1 class="text-3xl font-bold text-heading">Privacy</h1>
   <p class="mt-4 text-ink-soft">This site runs no ads and no third-party trackers.</p>
 
   <section class="mt-12" aria-labelledby="analytics-heading">
     <h2 id="analytics-heading" class="text-2xl font-semibold text-heading">Analytics</h2>
-    <p class="mt-4 text-ink-soft">The site uses basic, privacy-respecting analytics only: cookieless, with no personal data. [TBD: name the analytics tool].</p>
+    <p class="mt-4 text-ink-soft">The site doesn't run any analytics. If I add them, they'll be basic and privacy-respecting: cookieless, with no personal data, and I'll name the tool here.</p>
+  </section>
+
+  <section class="mt-12" aria-labelledby="hosting-heading">
+    <h2 id="hosting-heading" class="text-2xl font-semibold text-heading">Hosting</h2>
+    <p class="mt-4 text-ink-soft">The site is hosted on Netlify, with its optional data-collecting features turned off. Like any web host, Netlify receives standard request details, such as your IP address, to serve pages. It handles those under <a href="https://www.netlify.com/privacy/" class="text-accent hover:underline inline-flex min-h-11 items-center">Netlify's privacy policy</a>.</p>
   </section>
 
   <section class="mt-12" aria-labelledby="contact-heading">

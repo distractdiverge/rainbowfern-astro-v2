@@ -5,12 +5,10 @@ employer: PayPal (Business Financing Solutions)
 role: Senior Engineer, then Architect
 period: 2017–2019
 order: 2
+notes: |
+  Source: "0604 Acquisition Integration: Swift Financial, Salesforce and Architectural Transition",
+  "0704 Meeting: Cross-Team Communication, Integration and Knowledge Sharing" + résumé.
 ---
-
-<!--
-Source: "0604 Acquisition Integration: Swift Financial, Salesforce and Architectural Transition",
-"0704 Meeting: Cross-Team Communication, Integration and Knowledge Sharing" + résumé.
--->
 
 ## Context
 

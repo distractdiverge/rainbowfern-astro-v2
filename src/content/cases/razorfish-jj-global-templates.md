@@ -5,11 +5,9 @@ employer: Razorfish Healthware (client, Johnson & Johnson)
 role: Principal Developer
 period: 2012–2014
 order: 6
+notes: |
+  Source: "0715 Project Summary: Razorfish & J&J Global Drupal Template System" + résumé.
 ---
-
-<!--
-Source: "0715 Project Summary: Razorfish & J&J Global Drupal Template System" + résumé.
--->
 
 ## Context
 

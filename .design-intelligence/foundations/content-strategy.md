@@ -131,8 +131,8 @@ These appear on `/contact` and repeat at the end of every offer page.
 - `/now`: a dated availability line and current focus. This keeps offers from going stale (Adrian Roselli's pattern).
 - `/cv`: role titles, the PayPal Credit architecture role, PPP, Swift Financial, Razorfish, the Drexel degrees, a PDF download, and "Open to Technical Product Owner and architect roles."
 - `/press`: a ready-to-paste third-person bio and headshot (Sara Soueidan's pattern). It also serves AI summarizers.
-- `/accessibility`, `/privacy`: short and real. State that the site runs no ads and no third-party trackers, only basic privacy-respecting analytics, and name the analytics tool.
-- `/colophon` (optional): how the site is built and hosted, with open-source tools and independent hosting. It's a quiet values signal. See [[voice]].
+- `/accessibility`, `/privacy`: short and real. State that the site runs no ads and no third-party trackers, and name the host (Netlify). No analytics run yet; if one is added, it must be basic and privacy-respecting, and `/privacy` names it.
+- `/colophon` (optional): how the site is built and hosted: open-source tools, hosted on Netlify. Name the trade-off of low-cost serverless hosting over self-hosting. It's a quiet values signal. See [[voice]].
 
 ## Decided 2026-11-12
 
