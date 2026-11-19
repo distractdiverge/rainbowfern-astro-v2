@@ -19,9 +19,11 @@ Legend: [ ] open, [x] resolved, with the date and what changed. Work top to bott
   - The new line is missing an "I" ("and *I* tell you").
   - `src/pages/about.astro:20` still has the old line.
   - *Resolved 2026-11-19:* the owner chose a combined line that keeps the disclosure and adds teaching: "I use AI tools to extend skills I already have, not to replace them. I tell you where I used them on your work, and I'll show you how to do the same yourself." Updated in `voice.md` (values lines) and `src/pages/about.astro` ("How I work"). The "AI use" policy in `principles.md` needed no change.
-- [ ] **C4 The new "My aim…" line pulls toward mentees.** *Needs owner.*
+- [x] **C4 The new "My aim…" line pulls toward mentees.**
   - "Those just entering tech or trying to build something" puts mentees front and centre, but they're priority 2 in `audience.md` and decision 002. Small-business owners and founders are priority 1.
   - "Decades" needs to be true and consistent with the "15+ years" claim in `content-strategy.md`.
+  - *Resolved 2026-11-19:* the owner kept mentees first on purpose and accepts that the line leans toward the mentoring track. "Decades" became "nearly two decades," since the career starts in 2007 (Avenue A | Razorfish) and is about 19 years. Updated in `voice.md`. The line isn't on the About page yet.
+  - The "15+ years *at PayPal*" claim is still wrong and stays with C5. It appears in `content-strategy.md`, `src/pages/index.astro:45` and `src/pages/press.astro:11`.
 - [ ] **C5 The PayPal Credit timeline doesn't match the case studies.** *Needs owner.*
   - The `voice.md` Proof copy note says the move to PayPal Credit happened as part of the Swift Financial acquisition.
   - The case files say PayPal (Business Financing Solutions) from 2017 to 2019, then PayPal Credit from 2019 to 2023.
